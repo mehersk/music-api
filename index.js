@@ -9,7 +9,7 @@ const newReleasesDB = require('./newReleases.json')
 let port = process.env.PORT || 3000
 
 app.use((req, res, next) => {
-    res.header("Access-Control-Allow-Origin", ["http://localhost:4200", "https://music-angular.herokuapp.com"]); // update to match the domain you will make the request from
+    res.header("Access-Control-Allow-Origin", ["https://music-angular.herokuapp.com"]); // update to match the domain you will make the request from
     res.header("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT");
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     next();
